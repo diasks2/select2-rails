@@ -546,18 +546,11 @@ disabled look for disabled choices in the results dropdown
 }
 
 /* disabled styles */
-.select2-container-multi.select2-container-disabled .select2-choices {
-    background-color: #f4f4f4;
-    background-image: none;
-    border: 1px solid #ddd;
-    cursor: default;
-}
+.select2-container-multi .select2-choices .select2-search-choice {
+    padding: 3px 5px 3px 18px;
+    margin: 3px 0 3px 5px;
+    position: relative;
 
-.select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice {
-    padding: 3px 5px 3px 5px;
-    border: 1px solid #ddd;
-    background-image: none;
-    
     line-height: 30px;
     color: #fff;
     cursor: default;
@@ -578,9 +571,16 @@ disabled look for disabled choices in the results dropdown
 
     background-color: #F27A24;
 }
-
-.select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice .select2-search-choice-close {    display: none;
-    background: none;
+html[dir="rtl"] .select2-container-multi .select2-choices .select2-search-choice
+{
+    margin: 3px 5px 3px 0;
+    padding: 3px 18px 3px 5px;
+}
+.select2-container-multi .select2-choices .select2-search-choice .select2-chosen {
+    cursor: default;
+}
+.select2-container-multi .select2-choices .select2-search-choice-focus {
+    background: #d4d4d4;
 }
 /* end multiselect */
 
